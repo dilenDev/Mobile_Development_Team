@@ -1,4 +1,4 @@
-package com.example.retrofitandroidsessionone;
+package com.example.retrofitandroidsessionone.Model;
 
 import com.google.gson.annotations.SerializedName;
 

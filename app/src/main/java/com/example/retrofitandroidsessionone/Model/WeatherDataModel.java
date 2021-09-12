@@ -1,4 +1,4 @@
-package com.example.retrofitandroidsessionone;
+package com.example.retrofitandroidsessionone.Model;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -33,7 +33,7 @@ public class WeatherDataModel {
     }
 
 
-
+    //
     public long getDt() {
         return dt;
     }
@@ -56,5 +56,13 @@ public class WeatherDataModel {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    //
+    public Coords getCoord() {
+        return coord;
+    }
+    public void setCoord(Coords coord) {
+        this.coord = coord;
     }
 }
