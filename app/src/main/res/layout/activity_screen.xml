@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_bk_color"
+    android:padding="20dp"
+    tools:context=".Screen">
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="30dp"
+        style="@style/viewParent.headerText.NoMode"
+        android:textColor="@color/whiteTextColor"
+        android:layout_marginTop="50dp"
+        android:text="Here’s\nyour first\nstep with \nus! "
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/fimage"
+        app:layout_constraintBottom_toTopOf="@id/card"
+        android:layout_marginBottom="30dp"/>
+
+    <ImageView
+        android:id="@+id/fimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_login_hero"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        app:layout_constraintStart_toEndOf="@id/text1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@id/card"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInputName"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintStart_toStartOf="@id/card"
+        app:layout_constraintTop_toTopOf="@id/card"
+        app:layout_constraintEnd_toEndOf="@id/card"
+        android:layout_marginTop="50dp"
+        android:text="@string/name"
+
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:background="@color/white"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fimage"
+        app:layout_constraintVertical_bias="0.446"
+        app:cardCornerRadius="10dp"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

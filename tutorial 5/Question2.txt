@@ -1,0 +1,1 @@
+Fall through is a situation that occurs when we miss out break statement with switch cases.

@@ -1,0 +1,1 @@
+Break statement is to terminate the loop whereas continue statement is to continue loop from wherever declared.
