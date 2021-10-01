@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -81,6 +82,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@id/left3"
         app:layout_constraintEnd_toStartOf="@id/right2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/left1"
@@ -92,6 +95,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@id/right3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/left2"
         app:layout_constraintTop_toBottomOf="@id/right1"
@@ -103,9 +107,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
         app:layout_constraintEnd_toStartOf="@id/right6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/left2"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
         app:srcCompat="@drawable/rectangle_46" />
 
     <ImageView
@@ -114,6 +120,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@id/right4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/left2"
         app:layout_constraintTop_toBottomOf="@id/right2"
@@ -125,6 +132,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@id/right5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/left2"
         app:layout_constraintTop_toBottomOf="@id/right3"
@@ -136,6 +144,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@id/right6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/left2"
         app:layout_constraintTop_toBottomOf="@id/right4"
@@ -147,6 +156,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/left3"
         app:layout_constraintTop_toBottomOf="@id/right5"
@@ -169,7 +180,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.91" />
+        app:layout_constraintGuide_percent="0.9124487" />
 
     <ImageView
         android:id="@+id/imageDoc"
@@ -291,6 +302,7 @@
         android:layout_height="0dp"
         app:layout_constraintHeight_percent="0.1"
         app:layout_constraintWidth_percent="0.38"
+
         app:srcCompat="@drawable/hidayat_abisena__a2iuoznmhs_unsplash"
         app:layout_constraintStart_toStartOf="@id/left2"
         app:layout_constraintEnd_toEndOf="@id/left2"
